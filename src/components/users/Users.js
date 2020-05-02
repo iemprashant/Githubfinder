@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import Useritem from './Useritem'
-import { CardBody } from 'reactstrap'
 
 class Users extends Component {
     state={
