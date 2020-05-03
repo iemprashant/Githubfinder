@@ -7,7 +7,7 @@ import Users from './components/users/Users';
 class App extends React.Component{
   state={
     users:[],
-    loading:false
+    loading:true
   }
   async componentDidMount() {
 
