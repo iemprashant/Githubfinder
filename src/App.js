@@ -10,22 +10,20 @@ class App extends React.Component{
     users:[],
     loading:true
   }
-  async componentDidMount() {
-    console.log(process.env.REACT_APP_GITHUB_CLIENT_ID);
-
-  this.setState({loading:true});
-
-  const res=await axios.get(`https://api.github.com/users?client_id=${process.env.REACT_APP_GITHUB_CLIENT_ID}&client_secret=${process.env.REACT_APP_GITHUB_CLIENT_ID}`);
-
-  this.setState({users:res.data, loading:false});
-  }
-  
+  //Search github users
+  searchUsers = async text =>
+  {
+   this.setState({loading:true});
+  const res=await axios.get(`https://api.github.com/search/users?q=${text}&client_id=${process.env.REACT_APP_GITHUB_CLIENT_ID}&client_secret=${process.env.REACT_APP_GITHUB_CLIENT_ID}`);
+  console.log(text);
+  this.setState({users:res.data.items, loading:false});
+  };
   render(){
     return (
       <React.Fragment>
         <Navbar/>
         <div className='container'>
-          <Search/>
+          <Search searchUsers={this.searchUsers}/>
           <Users loading={this.state.loading} users ={this.state.users}/>
         </div>
 
