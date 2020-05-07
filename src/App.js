@@ -64,9 +64,9 @@ class App extends React.Component{
               <Route exact path='/user/:login' render={props => (
                   <User
                     {...props}
-                    getUser={this.getUser}
-                    user={user}
-                    loading={loading}
+                    getUser ={this.getUser}
+                    user ={user}
+                    loading ={loading}
                   />
               )}
               />
