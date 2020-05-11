@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import githubContext from '../../context/github/githubContext';
 
 
-const Search=({clearUsers,showClear,setAlert})=>{
+const Search=({setAlert})=>{
     const GithubContext = useContext(githubContext)
     const [text,setText]=useState('');
     const onChange= e => setText(e.target.value);
@@ -25,12 +25,11 @@ const Search=({clearUsers,showClear,setAlert})=>{
                 onChange={onChange}/>
                 <input type="submit" value="Search" className="btn btn-dark btn-block"/>
             </form>
-            {showClear && (<button className="btn btn-light btn-block" onClick={clearUsers}>Clear</button>)}
+            {GithubContext.users.length> 0 && (<button className="btn btn-light btn-block" onClick={GithubContext.clearUsers}>Clear</button>)}
         </div>
     )
 }
 Search.propTypes={
-    clearUsers:PropTypes.func.isRequired,
     showClear:PropTypes.bool.isRequired,
     setAlert:PropTypes.func.isRequired
 }
