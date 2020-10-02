@@ -7,7 +7,7 @@
 
 
 
-![Screenshot](https://github.com/iemprashant)
+![Screenshot](https://github.com/iemprashant/Githubfinder/blob/master/s.png)
 
 
 ## Usage example
