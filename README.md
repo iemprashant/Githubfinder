@@ -1,72 +1,54 @@
+# Github Finder
+> Github Finder is a refined, more creative way to look at your's or your friend's Github stats.
 
-🔎 React app to search Github profiles. This app uses the Context API along with the useContext and useReducer hooks for state management 📰
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![NPM Version][npm-image]][npm-url]
+[![Build Status][travis-image]][travis-url]
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/e17f496c-b75f-44c8-a10e-91036dc7858e/deploy-status)](https://app.netlify.com/sites/iemprashant-githubfinder/deploys)
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `npm start`
+![Screenshot](https://github.com/iemprashant)
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Usage example
 
-### `npm test`
+1. Search for someone's Github username.
+2. Click on view more to view general stats like followers, repos, stars etc.
+3. Go to a specific repo of the searched person.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Development setup
 
-### `npm run build`
+To setup the project locally, perform the following steps.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone the repo.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+```
+git clone github.com/your_username/Github-Finder.git
+```
+2. Install all the dependencies.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+npm install
+```
+3. To start the development server
 
-### `npm run eject`
+```
+npm run start
+```
+Project is live at port 3000 :)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Contributing
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Fork it.
+2. Create your feature branch (`git checkout -b feature/fooBar`)
+3. Commit your changes (`git commit -am 'Add some fooBar'`)
+4. Push to the branch (`git push origin feature/fooBar`)
+5. Create a new Pull Request
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+<!-- Markdown link & img dfn's -->
+[npm-image]: https://img.shields.io/npm/v/datadog-metrics.svg?style=flat-square
+[npm-url]: https://npmjs.org/package/datadog-metrics
+[npm-downloads]: https://img.shields.io/npm/dm/datadog-metrics.svg?style=flat-square
+[travis-image]: https://img.shields.io/travis/dbader/node-datadog-metrics/master.svg?style=flat-square
+[travis-url]: https://travis-ci.org/dbader/node-datadog-metrics
+[wiki]: https://github.com/yourname/yourproject/wiki
